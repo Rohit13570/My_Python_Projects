@@ -10,8 +10,8 @@
               <p class="card-text">{{i.desc}}.</p>
              <a href="{% url 'movieapp:detail' i.id %}" class="btn btn-primary">Go somewhere</a>
             </div>
-         </div>
+         </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   {% endfor %}
-   </div>
+   </div><a href="{% url 'movieapp:add_movie' %}" style="background-color:red;font-size:30px;position:absolute;left:90rem;bottom:35rem;">ADD</a>
 </div>
 {% endblock %}
